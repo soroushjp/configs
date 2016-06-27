@@ -1,0 +1,9 @@
+# machine specific zsh configuration
+
+# development folder
+# development folder is expected to have src, pkg, bin directories at a minimum.
+export DEVPATH=<include here>
+export PATH=$PATH:$DEVPATH/bin
+
+# golang
+export GOPATH=$DEVPATH
