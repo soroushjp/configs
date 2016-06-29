@@ -1,6 +1,8 @@
+" basics, should be self-explanatory
 filetype plugin indent on
 syntax on
 set encoding=utf-8
+colorscheme badwolf
 
 " indent using two spaces
 set autoindent

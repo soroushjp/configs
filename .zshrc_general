@@ -1,8 +1,8 @@
 # general zsh configuration
 
-export EDITOR=vi
+export EDITOR=nvim
 
-# helpful aliases
+# helper aliases
 alias ls="ls -AFhHl --color=auto --group-directories-first"
 alias g="git"
 alias py="python"
@@ -10,6 +10,9 @@ alias zedit="vi ~/.zshrc && source ~/.zshrc"
 alias zgedit="vi ~/.zsh_general && source ~/.zshrc"
 alias zmedit="vi ~/.zsh_machine && source ~/.zshrc"
 alias zkedit="vi ~/.zsh_keys && source ~/.zshrc"
+
+# alias vi to nvim
+alias vi=nvim
 
 # z fast directory browser
 . $DEVPATH/src/github.com/rupa/z/z.sh
