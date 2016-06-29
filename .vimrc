@@ -1,16 +1,43 @@
+" add Pathogen for plugins
+execute pathogen#infect()
+
 " basics, should be self-explanatory
-filetype plugin indent on
 syntax on
 set encoding=utf-8
+
+" indent by filetype
+filetype plugin indent on
+
+" color scheme
 colorscheme badwolf
 
+" map <leader> key to ,
+let mapleader=","
+
 " indent using two spaces
-set autoindent
-set expandtab
-set shiftwidth=2
-set tabstop=2
-set softtabstop=2
+set autoindent     " insert space indentation as previous line on ENTER
+set expandtab      " TAB inserts spaces
+set shiftwidth=2   " 2 spaces inserted for indentation
+set tabstop=2      " TAB char is 2 spaces wide
+set softtabstop=2  " TAB inserts 2 spaces
 
 " ruler
-set textwidth=79
-set colorcolumn=79
+set textwidth=79   " wrap at 79 chars on insert
+set colorcolumn=79 " different color at 79th char
+
+" visual cues
+set number     " show line numbers
+set cursorline " highlight current line
+set showcmd    " show last command in bottom-right
+
+" highlight last inserted text with gV
+noremap gV `[v`]
+
+" search
+set incsearch " turn on incremental search
+set hlsearch  " highlight matches after <ESC>
+" turn off highlighted matches with <leader><space>
+nnoremap <leader><space> :nohlsearch<CR>
+
+" set spell check language
+set spell spellang=en_us
