@@ -3,13 +3,13 @@
   name = Soroush Pour
   email = me@soroushjp.com
 [alias]
-  co = checkout
   ci = commit
-  lg = log
+  co = checkout
   df = diff
-  st = status
-  sh = stash
+  lg = log
   ph = push
   pl = pull
+  sh = stash
+  st = status
 [push]
   default=simple
