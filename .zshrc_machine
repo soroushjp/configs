@@ -1,8 +1,0 @@
-# machine specific zsh configuration
-
-# development folder
-export DEVPATH="/home/spour/Dropbox/dev"
-export PATH=$PATH:$DEVPATH/bin
-
-# golang
-export GOPATH=$DEVPATH

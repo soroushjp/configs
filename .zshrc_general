@@ -1,5 +1,7 @@
 # general zsh configuration
 
+export EDITOR=vi
+
 # helpful aliases
 alias ls="ls -AFhHl --color=auto --group-directories-first"
 alias g="git"

@@ -1,13 +1,15 @@
 # This is Git's per-user configuration file.
 [user]
-	name = Soroush Pour
-	email = me@soroushjp.com
+  name = Soroush Pour
+  email = me@soroushjp.com
 [alias]
-	co = checkout
-	ci = commit
-	st = status
-	sh = stash
-	ph = push
-	pl = pull
+  co = checkout
+  ci = commit
+  lg = log
+  df = diff
+  st = status
+  sh = stash
+  ph = push
+  pl = pull
 [push]
-	default=simple
+  default=simple
