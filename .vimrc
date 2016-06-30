@@ -40,4 +40,4 @@ set hlsearch  " highlight matches after <ESC>
 nnoremap <leader><space> :nohlsearch<CR>
 
 " set spell check language
-set spell spellang=en_us
+set spell spelllang=en_us
