@@ -11,6 +11,10 @@ filetype plugin indent on
 " color scheme
 colorscheme badwolf
 
+" airline plugin settings
+let g:airline_powerline_fonts=1
+
+
 " map <leader> key to ,
 let mapleader=","
 
