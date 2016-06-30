@@ -11,8 +11,9 @@ alias zgedit="vi ~/.zshrc_general && source ~/.zshrc"
 alias zmedit="vi ~/.zshrc_machine && source ~/.zshrc"
 alias zkedit="vi ~/.zshrc_keys && source ~/.zshrc"
 
-# alias vi to nvim
+# alias vi, vim to nvim
 alias vi=nvim
+alias vim=nvim
 
 # z fast directory browser
 . $DEVPATH/src/github.com/rupa/z/z.sh
