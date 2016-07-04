@@ -1,6 +1,6 @@
 # general zsh configuration
 
-export EDITOR=nvim
+export EDITOR=vi
 
 # helper aliases
 alias ls="ls -AFhHl --color=auto --group-directories-first"
@@ -17,3 +17,9 @@ alias vim=nvim
 
 # z fast directory browser
 . $DEVPATH/src/github.com/rupa/z/z.sh
+
+# keybindings
+# stick to emacs mode (rather than vi mode), overriding EDITOR=vi default
+bindkey -e
+# bind Ctrl+Backspace (i.e. ^H character for default gnometerminal) 
+bindkey '^H' backward-delete-word
