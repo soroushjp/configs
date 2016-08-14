@@ -23,3 +23,6 @@ alias vim=nvim
 bindkey -e
 # bind Ctrl+Backspace (i.e. ^H character for default gnometerminal) 
 bindkey '^H' backward-delete-word
+
+# add fuzzy finder to zsh
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

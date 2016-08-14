@@ -1,5 +1,15 @@
-" add Pathogen for plugins
-execute pathogen#infect()
+" install plugins
+call plug#begin('~/.vim/plugged')
+Plug 'sjl/badwolf'
+Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'junegunn/fzf.vim'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'tpope/vim-fugitive'
+Plug 'airblade/vim-gitgutter'
+Plug 'fatih/vim-go'
+Plug 'tpope/vim-surround'
+call plug#end()
 
 " basics, largely self-explanatory
 syntax on
@@ -45,3 +55,24 @@ nnoremap <leader><space> :nohlsearch<CR>
 " set spell check language
 set spell spelllang=en_us
 set nospell                 " turn off spell check by default
+
+" avoid PageDown/PageUp disrupting cursor position
+map <silent> <PageUp> 1000<C-U>
+map <silent> <PageDown> 1000<C-D>
+imap <silent> <PageUp> <C-O>1000<C-U>
+imap <silent> <PageDown> <C-O>1000<C-D>
+set nostartofline
+
+" disable cursor keys, PageUp, PageDown
+noremap <Up> <NOP>
+noremap <Down> <NOP>
+noremap <Left> <NOP>
+noremap <Right> <NOP>
+noremap <PageUp> <NOP>
+noremap <PageDown> <NOP>
+
+" support fzf fuzzy finder
+set rtp+=~/.fzf
+
+" write file on :make
+set autowrite
