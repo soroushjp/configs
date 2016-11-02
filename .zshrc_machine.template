@@ -1,8 +1,0 @@
-# machine specific zsh configuration
-
-# DEVPATH is the main development dir. It is expected to have src, pkg, bin directories, to satisify $GOPAT, to satisify $GOPATH requirements.
-export DEVPATH=<include here>
-export PATH=$PATH:$DEVPATH/bin
-
-# golang
-export GOPATH=$DEVPATH

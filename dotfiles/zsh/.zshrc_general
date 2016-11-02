@@ -9,7 +9,7 @@ alias py="python"
 alias zedit="vi ~/.zshrc && source ~/.zshrc"
 alias zgedit="vi ~/.zshrc_general && source ~/.zshrc"
 alias zmedit="vi ~/.zshrc_machine && source ~/.zshrc"
-alias zkedit="vi ~/.zshrc_keys && source ~/.zshrc"
+alias zsedit="vi ~/.zshrc_secrets && source ~/.zshrc"
 
 # alias vi, vim to nvim
 alias vi=nvim
