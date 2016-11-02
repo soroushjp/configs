@@ -1,6 +1,9 @@
 # machine specific zsh configuration
 
-# DEVPATH is the main development dir. It is expected to have src, pkg, bin directories, to satisify $GOPATH, to satisify $GOPATH requirements.
+# DEVPATH should be the root development directory. It is expected to include
+# 'src', 'pkg', and 'bin' directories, to serve as the $GOPATH for Go
+# development.
+
 export DEVPATH=<include here>
 export PATH=$PATH:$DEVPATH/bin
 
