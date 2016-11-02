@@ -13,3 +13,5 @@
   st = status
 [push]
   default=simple
+[gpg]
+  program = gpg2
