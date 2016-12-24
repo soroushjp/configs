@@ -22,20 +22,8 @@ alias vim=nvim
 # keybindings
 # ===========
 
-# use vi bindings
-bindkey -v
 # bind Ctrl+Backspace (i.e. ^H character for default gnometerminal) 
 bindkey '^H' backward-delete-word
-# reduce timeout for Insert/Normal mode switch to 0.1s
-export KEYTIMEOUT=1 
-# Provide INSERT/NORMAL indicator
-function zle-line-init zle-keymap-select {
-    VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-    RPS1="${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} $EPS1"
-    zle reset-prompt
-}
-zle -N zle-line-init
-zle -N zle-keymap-select
 
 # add fuzzy finder to zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
