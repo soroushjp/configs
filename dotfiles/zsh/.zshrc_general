@@ -4,9 +4,10 @@ export EDITOR=vi
 
 # helpful aliases
 alias g="git"
-alias lse="ls -AFhHl --color=auto --group-directories-first"
+alias l="ls -AFhHl --color=auto --group-directories-first"
 alias m="man"
 alias py="python"
+alias t="tmux"
 alias zedit="vi ~/.zshrc && source ~/.zshrc"
 alias zgedit="vi ~/.zshrc_general && source ~/.zshrc"
 alias zmedit="vi ~/.zshrc_machine && source ~/.zshrc"
