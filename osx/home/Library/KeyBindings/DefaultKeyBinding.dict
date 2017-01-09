@@ -1,0 +1,10 @@
+{
+    "^\UF702" = ("moveWordBackward:");
+    "^$\UF702" = ("moveWordBackwardAndModifySelection:");
+    "^\UF703" = ("moveWordForward:");
+    "^$\UF703" = ("moveWordForwardAndModifySelection:");
+    "~\UF702" = ("moveToBeginningOfLine:");
+    "~$\UF702" = ("moveToBeginningOfLineAndModifySelection:");
+    "~\UF703" = ("moveToEndOfLine:");
+    "~$\UF703" = ("moveToEndOfLineAndModifySelection:");
+}
