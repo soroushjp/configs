@@ -3,14 +3,15 @@
   name = Soroush Pour
   email = me@soroushjp.com
 [alias]
-  ci = commit
-  co = checkout
-  df = diff
-  lg = log
-  ph = push
-  pl = pull
-  sh = stash
-  st = status
+  ci  = commit
+  co  = checkout
+  df  = diff
+  lg  = log
+  ph  = push
+  phf = push --force-with-lease
+  pl  = pull
+  sh  = stash
+  st  = status
 [push]
   default=simple
 [gpg]
