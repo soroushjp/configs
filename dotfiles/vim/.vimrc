@@ -9,6 +9,7 @@ Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
 Plug 'fatih/vim-go'
 Plug 'tpope/vim-surround'
+Plug 'leafgarland/typescript-vim'
 call plug#end()
 
 " basics, largely self-explanatory
