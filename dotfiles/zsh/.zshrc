@@ -14,7 +14,7 @@ if [ -f ~/.zshrc_general ]; then
 	source ~/.zshrc_general
 fi
 
-# import sensitive keys
+# import secrets 
 if [ -f ~/.zshrc_secrets ]; then
 	source ~/.zshrc_secrets
 fi

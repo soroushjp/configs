@@ -4,7 +4,6 @@ export EDITOR=vi
 
 # helpful aliases
 alias g="git"
-alias l="ls -AFhHl --color=auto --group-directories-first"
 alias m="man"
 alias py="python"
 alias t="tmux"
@@ -12,6 +11,13 @@ alias zedit="vi ~/.zshrc && source ~/.zshrc"
 alias zgedit="vi ~/.zshrc_general && source ~/.zshrc"
 alias zmedit="vi ~/.zshrc_machine && source ~/.zshrc"
 alias zsedit="vi ~/.zshrc_secrets && source ~/.zshrc"
+
+# On non-GNU Linux systems (e.g. Mac), alias ls to better GNU Coreutils gls
+## https://apple.stackexchange.com/questions/300615/group-directories-first-option-for-ls-command
+if [ "$OSTYPE" != linux-gnu ]; then
+  alias ls=gls
+fi
+alias l="ls -AFhHl --color=auto --group-directories-first"
 
 # alias vi, vim to nvim
 alias vi=nvim
@@ -28,3 +34,7 @@ bindkey '^H' backward-delete-word
 
 # add fuzzy finder to zsh
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+# add node version manager (nvm)
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
