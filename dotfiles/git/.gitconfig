@@ -3,6 +3,7 @@
   name = Soroush Pour
   email = me@soroushjp.com
 [alias]
+  br  = branch
   ci  = commit
   co  = checkout
   df  = diff
