@@ -1,6 +1,6 @@
 # general zsh configuration
 
-export EDITOR=vi
+export EDITOR=nvim
 
 # helpful aliases
 alias g="git"
